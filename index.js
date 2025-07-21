@@ -26,19 +26,18 @@
 const ladder = {
     step: 0,
 
-    up: function () {
-        this.step++;
-        return this;
+    up: () => {
+        ladder.step++;
+        return ladder;
     },
 
-    down: function () {
-        this.step--;
-        return this;
+    down: () => {
+        ladder.step--;
+        return ladder;
     },
 
-    showStep: function () {
-        console.log(this.step);
-       // return this;
+    showStep: () => {
+        console.log(ladder.step);
     }
 };
 
